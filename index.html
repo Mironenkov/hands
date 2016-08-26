@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Template 0.0.1</title>
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightslider.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script>
+        function isHhistoryApiAvailable() {
+            return !!(window.history && history.pushState);
+        }
+    </script>
+</head>
+<body>
+
+<!-- Main wrap -->
+<main class="wrap">
+    <!-- Header -->
+    <header class="header">
+        <div class="main">
+            <a href="/hands/"><img src="images/logo.png" height="40" width="280" alt="logo"></a>
+            <div class="head-phone">
+                <a href="tel:08003203232">0 (800) 320 32 32</a>
+                <a class="header-btn" href="#">Заказать звонок</a>
+            </div>
+            <div class="hamburger-wrap">
+                <input id="hamburger" type="checkbox">
+                <label for="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></label>
+                <nav class="hidden-nav">
+                    <ul>
+                        <li><a href="http://test.pengstud.com/hands/blog.html">Блог</a></li>
+                        <li><a href="http://test.pengstud.com/hands/review.html">Отзывы</a></li>
+                        <li><a href="http://test.pengstud.com/hands/about.html">О нас</a></li>
+                        <li><a href="http://test.pengstud.com/hands/partners.html">Партнерам</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Section logo-container-->
+    <section id="content" class="content-block content-block-1">
+        <div class="main">
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="http://test.pengstud.com/hands/blog.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="95px" width="180px">
+                                <filter id="filter" x="-2" y="-2" width="180" height="82">
+                                    <feGaussianBlur in="SourceAlpha" stdDeviation="1" />
+                                    <feOffset dx="1" dy="1" />
+                                    <feMerge>
+                                        <feMergeNode />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                </filter>
+                                <polyline class="nav-item" points="0,0 0,70 180,80 180,0"  fill="#ffcc00"/>
+                                <text class="svg-text" font-size="20" font-family="Gagalin" fill="#fff" x="65" y="45">Блог</text>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://test.pengstud.com/hands/review.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="95px" width="180px">
+                                <polyline class="nav-item" points="0,0 0,70 180,80 180,0" fill="#ff4970" />
+                                <text class="svg-text" font-size="20" font-family="Gagalin" fill="#fff" x="55" y="45">Отзывы</text>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://test.pengstud.com/hands/about.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="95px" width="180px">
+                                <polyline class="nav-item" points="0,0 0,70 180,80 180,0" fill="#94cb35" />
+                                <text class="svg-text" font-size="20" font-family="Gagalin" fill="#fff" x="65" y="45">О нас</text>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://test.pengstud.com/hands/partners.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="95px" width="180px">
+                                <polyline class="nav-item" points="0,0 0,70 180,80 180,0" fill="#ce63cf" />
+                                <text class="svg-text" font-size="20" font-family="Gagalin" fill="#fff" x="45" y="45">Партнерам</text>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="content content-first-page">
+                <div class="flex-content-wrap">
+                    <a class="btn-wrap btn-wrap-top" href="page2.html"><span class="content-first-page__btn">Заказать тексты</span></a>
+                    <h2 class="content-title">С какой потребностью вы к нам пришли?</h2>
+                    <a class="btn-wrap btn-wrap-bottom" href="page2.html"><span class="content-first-page__btn">Проконсультироваться у специалистов</span></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End section logo-container -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="main">
+            <p>Пишем тексты для достижения Ваших целей! </p>
+            <nav>
+                <ul>
+                    <li><a href="http://test.pengstud.com/hands/blog.html">Блог</a></li>
+                    <li><a href="http://test.pengstud.com/hands/review.html">Отзывы</a></li>
+                    <li><a href="http://test.pengstud.com/hands/about.html">О нас</a></li>
+                    <li><a href="http://test.pengstud.com/hands/partners.html">Партнерам</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- End footer -->
+</main>
+<!-- End main wrap -->
+
+<!--js -->
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/jquery.hashchange.min.js"></script>
+<script src="js/lightslider.min.js"></script>
+<script src="js/common.min.js"></script>
+<!-- end js -->
+
+</body>
+</html>

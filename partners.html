@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Template 0.0.1</title>
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/lightslider.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script>
+        function isHhistoryApiAvailable() {
+            return !!(window.history && history.pushState);
+        }
+    </script>
+</head>
+<body>
+
+<!-- Main wrap -->
+<main class="wrap">
+    <!-- Header -->
+    <header class="header">
+        <div class="main">
+            <a href="/hands/"><img src="images/logo.png" height="40" width="280" alt="logo"></a>
+            <div class="head-phone">
+                <a href="tel:08003203232">0 (800) 320 32 32</a>
+                <a class="header-btn" href="#">Заказать звонок</a>
+            </div>
+            <div class="hamburger-wrap">
+                <input id="hamburger" type="checkbox">
+                <label for="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></label>
+                <nav class="hidden-nav">
+                    <ul>
+                        <li><a href="http://test.pengstud.com/hands/blog.html">Блог</a></li>
+                        <li><a href="http://test.pengstud.com/hands/review.html">Отзывы</a></li>
+                        <li><a href="http://test.pengstud.com/hands/about.html">О нас</a></li>
+                        <li><a href="http://test.pengstud.com/hands/partners.html">Партнерам</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- End header -->
+
+    <!-- Section logo-container-->
+    <section id="content" class="content-block content-block-1">
+        <div class="main">
+            <nav class="main-nav">
+                <ul>
+                    <li>
+                        <a href="http://test.pengstud.com/hands/blog.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="95px" width="180px">
+                                <filter id="filter" x="-2" y="-2" width="180" height="82">
+                                    <feGaussianBlur in="SourceAlpha" stdDeviation="1" />
+                                    <feOffset dx="1" dy="1" />
+                                    <feMerge>
+                                        <feMergeNode />
+                                        <feMergeNode in="SourceGraphic" />
+                                    </feMerge>
+                                </filter>
+                                <polyline class="nav-item" points="0,0 0,70 180,80 180,0"  fill="#ffcc00"/>
+                                <text class="svg-text" font-size="20" font-family="Gagalin" fill="#fff" x="65" y="45">Блог</text>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://test.pengstud.com/hands/review.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="95px" width="180px">
+                                <polyline class="nav-item" points="0,0 0,70 180,80 180,0" fill="#ff4970" />
+                                <text class="svg-text" font-size="20" font-family="Gagalin" fill="#fff" x="55" y="45">Отзывы</text>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://test.pengstud.com/hands/about.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="95px" width="180px">
+                                <polyline class="nav-item" points="0,0 0,70 180,80 180,0" fill="#94cb35" />
+                                <text class="svg-text" font-size="20" font-family="Gagalin" fill="#fff" x="65" y="45">О нас</text>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://test.pengstud.com/hands/partners.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="95px" width="180px">
+                                <polyline class="nav-item" points="0,0 0,70 180,80 180,0" fill="#ce63cf" />
+                                <text class="svg-text" font-size="20" font-family="Gagalin" fill="#fff" x="45" y="45">Партнерам</text>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <h2 class="main-title">Партнерам</h2>
+            <div class="content content-partners">
+                <div class="p-row p-row-first">
+                    <div class="p-row-left p-row-left-item">
+                        <h2 class="p-row__title">Вы работаете:</h2>
+                        <ul class="p-row__list">
+                            <li class="first">В IT компании</li>
+                            <li class="second">Копирайтинговом агентстве</li>
+                            <li class="third">WEB-студии</li>
+                            <li class="fourth">SEO-специалистом</li>
+                            <li class="fifth">Фрилансером</li>
+                        </ul>
+                    </div>
+                    <h2 class="p-row__title p-row__title-left">И у вас есть потребность увеличить объемы написания
+                        текстов для личных нужд или клиентов?</h2>
+                </div>
+                <div class="p-row">
+                    <div class="p-row-right">
+                        <h2 class="p-row__title">Хотите отдать копирайтинг на аутсорс?</h2>
+                        <p>Мы ведь со своей командой понимаем, как важно, чтобы клиент был всегда доволен. Именно поэтому предлагаем объединить свои усилия в борьбе за качество предоставляемых услуг. Мы напишем тексты в необходимых вам объемах.</p>
+                    </div>
+                </div>
+                <div class="p-row p-row-form">
+                    <h2 class="p-row__title">А чтобы узнать наши партнерские цены на
+                        копирайтинг — заполните заявку ниже.</h2>
+                    <div class="partners-form">
+                        <form method="post" action="">
+                            <div class="partners-form__left">
+                                <input type="text" placeholder="Имя *" required>
+                                <input type="tel" placeholder="Номер телефона *" required>
+                                <input type="email" placeholder="example@email.ru">
+                            </div>
+                            <div class="partners-form__right">
+                                <input type="text" placeholder="Название компании">
+                                <input type="text" placeholder="Сайт">
+                                <input class="form-btn" type="submit" value="Отправить">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="partners-form__text">
+                        <p>Мы свяжемся с вами в течении
+                            дня после отправки заявки.
+                        </p>
+                        <p>
+                            Поверьте, вместе <span>мы сделаем еще больше!</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End section logo-container -->
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="main">
+            <p>Пишем тексты для достижения Ваших целей! </p>
+            <nav>
+                <ul>
+                    <li><a href="http://test.pengstud.com/hands/blog.html">Блог</a></li>
+                    <li><a href="http://test.pengstud.com/hands/review.html">Отзывы</a></li>
+                    <li><a href="http://test.pengstud.com/hands/about.html">О нас</a></li>
+                    <li><a href="http://test.pengstud.com/hands/partners.html">Партнерам</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <!-- End footer -->
+</main>
+<!-- End main wrap -->
+
+<!--js -->
+<script src="js/lib/jquery.min.js"></script>
+<script src="js/jquery.hashchange.min.js"></script>
+<script src="js/lightslider.min.js"></script>
+<script src="js/common.min.js"></script>
+<!-- end js -->
+
+</body>
+</html>

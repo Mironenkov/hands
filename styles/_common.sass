@@ -1,0 +1,1147 @@
+body
+  font-family: $font-base
+  font-size: $font-size-base
+  background: url(../images/main-bg.jpg) right
+  //color: $color-text-base
+  height: 100%
+.main
+  width: 1156px
+  margin: 0 auto
+.wrap
+  display: -webkit-box
+  display: flex
+  flex-direction: column
+  min-height: 100vh
+
+//header
+.header
+  background-color: $bg-main-theme
+  line-height: 60px
+  position: relative
+  z-index: 2
+  +box-shadow($nav-shadow)
+  .main
+    +clearfix
+  img
+    float: left
+    margin-top: 11px
+  .head-phone
+    float: right
+    +clearfix
+    a
+      float: left
+      font-size: 18px
+      margin: 0 20px
+      color: $header-color
+      &:hover
+        color: $bg-base
+    .header-btn
+      font-family: Gagalin
+      font-size: 18px
+      text-transform: $text-transform
+      text-decoration: underline
+
+//Content
+.start-to-go
+  font-size: 20px
+  color: $color-title
+  text-decoration: underline
+  font-family: Gagalin, MyriadProRegular, Helvetica, sans-serif
+  position: absolute
+  right: 150px
+  bottom: 50px
+.content-block
+  position: relative
+  z-index: 1
+  -webkit-flex: 1 100%
+  flex: 1 100%
+  .main
+    height: 80vh
+    +clearfix
+.main-nav
+  float: right
+  position: relative
+.main-nav ul
+  +clearfix
+  li
+    float: left
+    margin: 0 10px
+  polyline
+    filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5))
+.main-nav svg .nav-item
+  stroke: rgba(0,0,0,0.2)
+  filter: url(#filter)
+  filter: drop-shadow(1px 1px 1px rgba(0,0,0,0.5))
+  +transition(0.5s all linear)
+.main-nav svg
+  +transition(0.5s all linear)
+  &:hover .nav-item
+    +transform(scale(1, 1.1))
+    stroke: rgba(0,0,0,1)
+
+.content
+  clear: both
+  position: relative
+  height: 65vh
+  display: flex
+  align-items: center
+  justify-content: center
+  +clearfix
+.content-title
+  text-transform: $text-transform
+  font-family: Gagalin
+  font-size: 25px
+  color: $color-title
+.content-first-page__btn,.content-second-page__btn
+  display: table-cell
+  vertical-align: middle
+  text-align: center
+  text-transform: $text-transform
+  font-size: 18px
+  font-family: Gagalin, MyriadProRegular, Helvetica, sans-serif
+  color: #333333
+  text-shadow: 1px 1px 1px rgba(250,250,250,0.5)
+  +transition(0.5s all linear)
+  &:hover
+    color: #000
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5)
+.content-second-page__btn
+  font-size: 14px
+.btn-wrap
+  position: absolute
+  z-index: 5
+.content-first-page
+  .content-first-page__btn
+    background: url(../images/main-btn.png) no-repeat
+    background-color: #e3e0e0
+    height: 66px
+    width: 256px
+    +box-shadow(1px 1px 3px 1px rgba(0,0,0,0.5))
+    +border-radius(10px)
+    +box-sizing(border-box)
+    +transition(0.2s all)
+    &:hover
+      background: none
+      background-color: #e3e0e0
+      border: 3px solid #696868
+      +box-shadow(1px 1px 3px 1px rgba(0,0,0,0.8))
+      +box-sizing(border-box)
+  .btn-wrap-top
+    left: 115px
+    top: 45px
+  .btn-wrap-bottom
+    right: 155px
+    bottom: 100px
+  .content-title
+    text-align: center
+    //position: absolute
+    //width: 630px
+    //height: 30px
+    //left: 50%
+    //top: 50%
+    //margin-left: -315px
+    //margin-top: -15px
+    &::before
+      content: ''
+      display: block
+      background: url(../images/arrows-left.png) no-repeat center
+      height: 50%
+      width: 35%
+      position: absolute
+      top: 60px
+      left: 125px
+      z-index: 1
+      background-size: contain
+    &::after
+      content: ''
+      display: block
+      background: url(../images/arrows-right.png) no-repeat center
+      height: 50%
+      width: 35%
+      position: absolute
+      right: 245px
+      bottom: 75px
+      z-index: 1
+      background-size: contain
+.content-second-page
+  .content-title
+    text-align: center
+    position: relative
+    &:before
+      content: ''
+      display: block
+      background: url(../images/arrows-left2.png) no-repeat center
+      height: 269px
+      width: 146px
+      position: absolute
+      top: -115px
+      left: -80px
+      z-index: 1
+    &:after
+      content: ''
+      display: block
+      background: url(../images/arrows-right2.png) no-repeat center
+      height: 292px
+      width: 329px
+      position: absolute
+      right: -140px
+      top: -110px
+      z-index: 1
+  .content-second-page__btn
+    background: url(../images/main-btn.png) no-repeat
+    background-color: #e3e0e0
+    height: 66px
+    width: 256px
+    +box-shadow(1px 1px 3px 1px rgba(0,0,0,0.5))
+    +border-radius(10px)
+    +box-sizing(border-box)
+    +transition(0.2s all)
+    &:hover
+      background: none
+      background-color: #e3e0e0
+      border: 3px solid #696868
+      +box-shadow(1px 1px 3px 1px rgba(0,0,0,0.8))
+      +box-sizing(border-box)
+  .btn-wrap-1
+    left: 120px
+    top: 20px
+  .btn-wrap-2
+    left: 345px
+    top: 115px
+  .btn-wrap-3
+    right: 230px
+    top: 20px
+  .btn-wrap-4
+    right: 70px
+    top: 120px
+  .btn-wrap-5
+    left: -15px
+    top: 240px
+  .btn-wrap-6
+    left: 110px
+    bottom: 15px
+  .btn-wrap-7
+    left: 420px
+    bottom: 125px
+  .btn-wrap-8
+    right: 135px
+    bottom: 10px
+  .btn-wrap-9
+    right: 25px
+    bottom: 130px
+
+
+.content-third-page
+  align-items: baseline
+  justify-content: flex-start
+  flex-direction: row
+  height: auto
+  padding: 35px 0
+
+//.page3-title-top
+  margin-top: 50px
+.page3-title
+  font-family: $font-main
+  font-size: 20px
+  color: $color-title
+  &::before
+    content: ''
+    display: block
+    float: right
+    background: url(../images/p3-arrow1.png) no-repeat
+    height: 84px
+    width: 239px
+    background-size: contain
+.page3-title-center
+  text-align: center
+  &::before
+    background: url(../images/p3-arrow2.png) no-repeat
+    height: 82px
+    width: 160px
+    float: left
+    margin: 20px
+.page3-title-bottom
+  text-align: left
+  align-self: baseline
+  font-size: 18px
+  &::before
+    display: none
+.table-title
+  font-size: 16px
+  font-family: Gagalin
+  color: #333333
+.table-text
+  font-size: 14px
+  color: #333333
+.p3-table-wrapp
+  float: left
+  margin: 0 -10px
+  //&::after
+    content: ''
+    display: block
+    float: right
+    background: url(../images/table-arrow.png) no-repeat
+    height: 126px
+    width: 169px
+    background-size: contain
+    margin-top: -85px
+.page3-title-center_right
+  padding-top: 25px
+  align-self: center
+  position: relative
+  &::before
+    background: url(../images/arrow-check.png) no-repeat
+    height: 70px
+    width: 72px
+    position: absolute
+    right: -90px
+    top: 25px
+//Page 3 form
+.p3-form-1-wrap
+  background: url(../images/form1-bg.png) no-repeat
+  position: absolute
+  right: 50px
+  top: 70px
+  height: 196px
+  width: 237px
+.p3-form-2-wrap
+  background: url(../images/form2-bg.png) no-repeat
+  float: right
+  height: 254px
+  width: 628px
+  .form-btn
+    float: right
+.p3-form
+  display: block
+  padding: 20px
+  margin-top: 25px
+  width: 100%
+  font-size: 14px
+  +box-sizing(border-box)
+  +clearfix
+  input
+    display: block
+  .input-min
+    display: block
+    width: 100%
+    padding: 5px 10px
+    border: 1px solid #ccc
+    margin-bottom: 20px
+    font-family: MyriadProRegular, Helvetica, sans-serif
+    +box-sizing(border-box)
+.form-btn
+  background-color: #195dcd
+  font-size: 14px
+  color: $bg-base
+  padding: 5px 25px
+  font-family: Gagalin
+  margin: 0 auto
+.p3-form-2-col-left
+  float: left
+  width: 30%
+.p3-form-2-col-right
+  float: right
+  width: 65%
+.input-big
+  width: 100%
+  padding: 5px 10px
+  border: 1px solid #ccc
+  margin-bottom: 20px
+  font-family: MyriadProRegular, Helvetica, sans-serif
+  +box-sizing(border-box)
+textarea.input-big
+  height: 75px
+  font-family: MyriadProRegular, Helvetica, sans-serif
+
+//About
+.content-about
+  align-items: baseline
+  flex-flow: row wrap
+  justify-content: flex-end
+.main-title
+  margin: 15px 0
+  font-size: 26px
+  color: $color-title
+  text-align: center
+  font-family: Gagalin,  MyriadProRegular, Helvetica, sans-serif
+  text-transform: $text-transform
+  clear: both
+.about-item
+  font-size: 14px
+  font-family: MyriadProRegular, Helvetica, sans-serif
+  color: #323232
+  text-align: left
+  background-color: #e3e0e0
+  padding: 10px
+  min-height: 110px
+  width: 30%
+  margin: 3px 10px
+  line-height: 18px
+  font-weight: 800
+  position: relative
+  z-index: 20
+  +box-sizing(border-box)
+  &::after
+    content: ''
+    font-family: Gagalin,  MyriadProRegular, Helvetica, sans-serif
+    font-size: 90px
+    color: #bbc6dc
+    text-align: right
+    position: absolute
+    top: 40px
+    right: 30px
+    z-index: -1
+.about-item-1
+  &::after
+    content: '1'
+.about-item-2
+  &::after
+    content: '2'
+.about-item-3
+  &::after
+    content: '3'
+.about-item-4
+  &::after
+    content: '4'
+.about-item-5
+  &::after
+    content: '5'
+.about-item-6
+  &::after
+    content: '6'
+.about-item-7
+  &::after
+    content: '7'
+.about-item-8
+  &::after
+    content: '8'
+.about-item-9
+  &::after
+    content: '9'
+
+//Reviews
+.content-review
+  align-items: baseline
+  flex-flow: row wrap
+  justify-content: flex-end
+.review-item
+  background-color: #e3e0e0
+  padding: 10px 10px 0 10px
+  margin: 10px 0
+  color: #323232
+  +clearfix
+  +box-sizing(border-box)
+  .social-wrap
+    float: right
+    +clearfix
+    i
+      float: left
+      font-size: 20px
+      color: $bg-main-theme
+      margin: 10px
+  h2
+    font-size: 16px
+    font-family: MyriadProRegular, Helvetica, sans-serif
+    font-weight: 800
+  p
+    font-size: 13px
+    &::after
+      content: ''
+      display: block
+      background: url(../images/line.png) no-repeat
+      height: 6px
+      width: 361px
+      margin-top: 10px
+  .images-wrap
+    float: left
+    margin-right: 20px
+    img
+      height: 100%
+      width: 65%
+      margin: $margin_center
+      display: block
+  .rew-photo
+    margin-bottom: 10px
+.review-item__text
+  overflow: hidden
+.blog-item
+  font-family: MyriadProRegular, Helvetica, sans-serif
+  font-size: 14px
+  margin-bottom: 20px
+  +clearfix
+  .date
+    float: right
+    margin-bottom: 10px
+  .images-wrap
+    clear: both
+    position: relative
+    height: 120px
+    width: 372px
+    .hidden
+      display: flex
+      flex-direction: row
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+      width: 100%
+      height: 100%
+      opacity: 0
+      background: rgba(25,93,205,0.7)
+  .hidden-btn
+    text-transform: $text-transform
+    color: $bg-base
+    font-size: 16px
+    margin: 0 auto
+    align-self: center
+    position: relative
+    &::before
+      content: '+'
+      display: block
+      float: left
+      font-size: 25px
+      font-weight: 900
+      position: absolute
+      left: -25px
+      top: -11px
+  .images-wrap:hover .hidden
+    opacity: 1
+.content-blog
+  align-items: baseline
+  margin: 0 0 20px
+  .sliderControl
+    top: 50%
+.blog-item__text
+  a
+    display: block
+    margin: 15px 0
+    color: #323232
+    font-size: 24px
+    &:hover
+      color: $color-title
+.sliderControl
+  background: url(../images/sliderControl.png) no-repeat
+  height: 60px
+  width: 33px
+  background-size: contain
+  position: absolute
+  top: 50%
+  margin-top: -30px
+.btn-prev
+  left: -60px
+.btn-next
+  right: -60px
+  +transform(rotate(180deg))
+
+//Partners
+.content-partners
+  align-items: baseline
+  flex-flow: row wrap
+  justify-content: flex-end
+.p-row
+  +clearfix
+.p-row-first
+  -webkit-flex: 1
+  flex: 1
+  position: relative
+  .p-row__title-left
+    &::after
+      content: ''
+      display: block
+      background: url(../images/partners-arrow2.png) no-repeat
+      height: 66px
+      width: 67px
+      position: absolute
+      right: 0
+      top: 38px
+.p-row__title-left
+  float: right
+  text-align: center
+  width: 540px
+.p-row-left
+  float: left
+  margin-left: 90px
+.p-row-left-item
+  position: relative
+  &::after
+    content: ''
+    display: block
+    background: url(../images/partners-arrow1.png) no-repeat
+    height: 83px
+    width: 279px
+    position: absolute
+    left: 240px
+    top: 0
+  .p-row__title
+    margin-bottom: 5px
+.p-row__list li
+  font-size: 18px
+  font-family: MyriadProRegular, Helvetica, sans-serif
+  &::before
+    content: ''
+    display: block
+    float: left
+    margin: 5px
+    height: 0
+    width: 0
+    border-top: 5px solid transparent
+    border-left: 10px solid red
+    border-bottom: 5px solid transparent
+.p-row__list .first
+  &::before
+    border-left: 10px solid #ffcc00
+.p-row__list .second
+  &::before
+    border-left: 10px solid #ff4970
+.p-row__list .third
+  &::before
+    border-left: 10px solid #94cb35
+.p-row__list .fourth
+  &::before
+    border-left: 10px solid #ce63cf
+.p-row__list .fifth
+  &::before
+    border-left: 10px solid #195dcd
+.p-row-right
+  margin-top: -70px
+  text-align: right
+  p
+    width: 675px
+    text-align: left
+    margin-top: 10px
+    position: relative
+    font-family: MyriadProRegular, Helvetica, sans-serif
+    font-size: 17px
+    &::before
+      content: ''
+      display: block
+      background: url(../images/partners-arrow3.png) no-repeat
+      height: 62px
+      width: 144px
+      position: absolute
+      top: -20px
+      left: -150px
+.p-row-form
+  width: 100%
+  .p-row__title
+    margin-top: -45px
+    width: 380px
+    text-align: left
+  p
+    font-size: 18px
+.partners-form
+  background: url(../images/partners-form.png) no-repeat
+  height: 215px
+  width: 435px
+  background-size: contain
+  float: left
+  margin-right: 50px
+  form
+    padding: 20px 25px 20px 15px
+    +clearfix
+    div
+      width: 45%
+      +box-sizing(border-box)
+  .partners-form__left
+    float: left
+  .partners-form__right
+    float: right
+    margin-right: 10px
+  input
+    display: block
+    padding: 5px 10px
+    width: 100%
+    margin: 25px 0
+    +box-sizing(border-box)
+.partners-form__text
+  float: left
+  margin-top: 45px
+  p
+    margin: 10px 0
+    span
+      text-transform: uppercase
+      display: inline-block
+      &::after
+        content: ''
+        display: block
+        background: url(../images/partners-line.png) no-repeat
+        height: 6px
+        width: 257px
+  p:nth-child(1)
+    width: 270px
+
+.p-row__title
+  font-family: Gagalin, MyriadProRegular, Helvetica, sans-serif
+  font-size: 17px
+  color: $color-title
+
+.footer
+  background-color: $bg-main-theme
+  line-height: 60px
+  +box-shadow($nav-shadow-footer)
+  +clearfix
+  p
+    float: left
+    font-size: 18px
+    font-weight: 800
+    color: $bg-base
+  nav
+    float: right
+    +clearfix
+    li
+      float: left
+      margin: 0 14px
+    a
+      font-family: Gagalin
+      font-size: 20px
+      color: $bg-base
+      &:hover
+        color: $header-color
+.hamburger-wrap
+  display: none
+.content-blog, .content-review
+  .lSSlideOuter .lSPager.lSpg > li a
+    width: 12px
+    height: 12px
+    background-color: #323232
+.content-blog, .content-review
+  .lSSlideOuter .lSPager.lSpg > li
+    padding: 0 10px
+@media screen and (max-width: 1370px)
+  .btn-wrap
+    display: block
+@media screen and (max-width: 1124px) and (min-width: 1024px)
+  .content-block-1
+    .main
+      height: auto
+    .content
+      flex-direction: column
+      height: 60vh
+    .content-second-page
+      height: auto
+      padding-bottom: 20px
+    .content-third-page
+      height: auto
+      -webkit-flex-direction: row
+      flex-direction: row
+      -webkit-justify-content: space-between
+      justify-content: space-between
+  .main
+    width: 910px
+  .content-title
+    &:before,&:after
+      display: none !important
+  .main-nav
+    float: none
+  .flex-content-wrap
+    display: flex
+    flex-direction: column
+  .content-first-page
+    .content-first-page__btn
+      background-image: none
+      width: 320px
+      height: 80px
+    .content-title
+      //margin: 10px 0 15px 0
+      margin: 10% 0 10% 0
+  .btn-wrap
+    position: static
+    margin: 10px auto
+  .page3-title
+    &:before,&:after
+      display: none !important
+  .p3-table-wrapp
+    position: relative
+  .page3-title-center
+    text-align: left
+    align-self: baseline
+    margin: 0
+  .page3-title-center_right
+    position: static
+    margin: 0
+    align-self: baseline
+  .page3-title-bottom
+    align-self: auto
+    font-size: 20px
+  .content-third-page
+    +clearfix
+    h2
+      margin: 15px 0
+  .p3-form-1-wrap
+    position: static
+    align-self: flex-end
+    order: 2
+  .p3-form-2-wrap
+    position: static
+    align-self: flex-end
+    order: 2
+  .table-text
+    order: 1
+  .content-block-1
+    .content-about
+      flex-direction: row
+      height: auto
+      padding-bottom: 15px
+  .start-to-go
+    position: static
+    margin-bottom: 20px
+    display: block
+  .content-block-1
+    .content-blog
+      flex-direction: row
+      height: auto
+    .content-partners
+      height: auto
+    .content-review
+      flex-direction: row
+      height: auto
+  .btn-prev
+    left: -40px
+  .btn-next
+    right: -40px
+  .p-row
+    margin: 20px 0
+  .p-row-left
+    margin: 0
+  .p-row-left-item
+    &::after
+      display: none
+  .p-row-first
+    .p-row__title-left::after
+      display: none
+  .p-row-right
+    margin-top: -40px
+    p::before
+      display: none
+  .p-row-form .p-row__title
+    margin-top: -30px
+@media screen and (max-width: 1023px) and (min-width: 911px)
+  .content-block
+    .main
+      width: 860px
+      height: auto
+  .content
+    -webkit-flex-direction: column
+    flex-direction: column
+    height: auto
+  .btn-wrap
+    margin: 10px auto
+    position: static
+  .content-second-page .content-title:before
+    display: none
+  .content-second-page .content-title:after
+    display: none
+@media screen and (max-width: 910px) and (min-width: 680px)
+  .main
+    width: 728px
+  .header .head-phone
+    float: right
+    margin-top: 20px
+  .content-blog
+    .sliderControl
+      display: none
+  .blog-item img
+    width: 95%
+  .content-review
+    .sliderControl
+      display: none
+  .content-first-page
+    padding-bottom: 15px
+    //height: 65vh !important
+  .content-partners
+    padding-bottom: 15px
+    height: auto
+  //  height: 75vh !important
+  .content-first-page .content-title
+    margin: 50px 0
+  .content-first-page
+    .content-first-page__btn
+      background-image: none
+      height: 75px
+      width: 370px
+@media screen and (max-width: 680px) and (min-width: 470px)
+  .main
+    width: 470px
+  .sliderControl
+    display: none
+  .main-nav
+    text-align: center
+    ul
+      li
+        float: none
+        display: inline-block
+  .content-partners
+    height: auto
+@media screen and (max-width: 910px) and (min-width: 320px)
+  .pc
+    display: none
+  .header
+    line-height: 30px
+    img
+      float: none
+    //.head-phone
+      float: none
+      a
+        float: none
+        display: block
+  .content-block-1
+    .main
+      height: auto
+    .content
+      //flex-direction: column
+      //height: auto
+  .btn-wrap
+    margin: 10px auto
+    position: static
+  .content-title
+    &:before,&:after
+      display: none !important
+  .page3-title
+    &:before,&:after
+      display: none !important
+  .p-row-left-item
+    &::after
+      display: none
+  .p-row-first
+    .p-row__title-left::after
+      display: none
+  .p-row-right
+    p::before
+      display: none
+  .p3-table-wrapp
+    position: relative
+    img
+      width: 100%
+      height: 100%
+    &:after
+      display: none
+  .content-first-page .btn-wrap-bottom .content-first-page__btn
+    background-size: contain
+  .footer
+    line-height: 30px
+    nav a
+      font-size: 15px
+  .footer p
+    font-size: 14px
+  .main-nav
+    float: none
+    ul li
+      //float: none
+      margin: 0 auto
+  .flex-content-wrap
+    display: flex
+    flex-direction: column
+  .content-first-page
+    .content-title
+      margin: 10px 0 15px 0
+  .content-second-page__btn
+    background-size: contain !important
+    font-size: 12px
+  .p3-form-1-wrap
+    margin: 0 auto
+    position: static
+  .page3-title-center
+    text-align: left
+    align-self: baseline
+    margin: 0
+  .page3-title-center_right
+    position: static
+    margin: 0
+    align-self: baseline
+  .page3-title-bottom
+    align-self: auto
+    font-size: 18px
+  .table-text
+    margin-bottom: 10px
+  .about-item
+    min-height: 75px
+    width: 100%
+    &:after
+      font-size: 70px
+      top: 25px
+  .start-to-go
+    position: static
+    font-size: 17px
+    display: block
+    margin: 20px 0
+  .content-block-1 .content-blog
+    flex-direction: row
+    height: auto
+  .content-block-1 .content-review
+    flex-direction: row
+    height: auto
+  .content-about
+    height: auto
+  .content-third-page
+    justify-content: space-between
+  .review-item .images-wrap
+    float: none
+    img
+      margin: 0 auto
+  .p-row-left
+    float: none
+    text-align: left
+    margin: 0
+  .p-row__title-left
+    width: auto
+    float: none
+    text-align: left
+  .p-row-right
+    margin: 0
+    p
+      width: auto
+  .p-row-form .p-row__title
+    margin-top: 0
+    width: auto
+  .partners-form__text
+    margin-top: 10px
+  //.partners-form
+    display: none
+  .content-block-1
+    .content-second-page
+      flex-direction: column
+      //height: 65vh
+      height: auto
+    padding-bottom: 20px
+@media screen and (max-width: 768px) and (min-width: 471px)
+  .content-first-page .content-title
+    margin: 5% 0 5% 0
+  .content-block-1 .content-second-page
+    height: 100%
+    padding-bottom: 25px
+  .content-second-page .content-second-page__btn
+    background-image: none
+  .content-second-page .content-title
+    margin: 15px 0
+  .btn-wrap
+    margin: 10px auto
+  .content-third-page
+    justify-content: space-between
+  .p3-table-wrapp
+    margin: 0 0 20px -205px
+    left: 50%
+  .p3-form-2-wrap
+    float: none
+    clear: both
+    width: 100%
+    max-width: 628px
+    margin: 0 auto 20px
+  .p3-form
+    margin-top: 0
+    height: 100%
+    padding: 40px 20px 20px
+  .partners-form
+    float: none
+    margin: 0 auto
+  .blog-item .images-wrap
+    width: 100%
+    img
+      width: 100%
+  .content-about
+    padding-bottom: 15px
+@media screen and (max-width: 470px) and (min-width: 320px)
+  .main-nav
+    text-align: center
+    ul
+      li
+        float: none
+        display: inline-block
+  .main
+    width: 320px
+    text-align: center
+  .btn-wrap
+    position: static
+  .sliderControl
+    display: none
+  .content
+    height: auto
+  .content-first-page
+    height: 65vh
+  .content-third-page
+    display: block
+  .page3-title-center
+    padding-top: 25px
+    text-align: center
+  .p3-form-2-wrap
+    background: none
+    width: 100%
+    max-width: 628px
+    height: 100%
+  .p3-form-2-col-left
+    float: none
+    width: 100%
+  .p3-form-2-col-right
+    float: none
+    width: 100%
+  textarea.input-big
+    height: 90px
+  .main-nav ul li
+    float: none
+  .p3-table-wrapp
+    margin: 0
+  .content-first-page .content-first-page__btn
+    background-image: none
+  .flex-content-wrap
+    margin: 25px 0
+  .content-first-page .content-title
+    margin: 25px 0
+  .content-second-page .content-second-page__btn
+    background-image: none
+  .content-second-page .content-title
+    margin: 15px 0
+  .btn-wrap
+    margin: 10px auto
+  .content-block-1 .content-second-page
+    height: 100%
+    padding: 15px 0
+  .partners-form
+    height: 100%
+    width: 100%
+    background-image: none
+    background-color: #e3e0e0
+    margin: 15px 0 0
+  .partners-form .partners-form__left
+    float: none
+    width: 100%
+  .partners-form .partners-form__right
+    float: none
+    width: 100%
+    margin: 0
+  .partners-form input
+    margin: 0 0 25px
+  .partners-form .partners-form__right input:last-child
+    margin: 0
+  .content-block-1 .content-review
+    padding-bottom: 15px
+  .content-about
+    padding-bottom: 15px
+  .main-nav
+    display: none
+  //hamburger
+  .hamburger-wrap
+    font-family: Gagalin
+    display: block
+    float: right
+    text-align: right
+    margin: -50px 10px 0 0
+    #hamburger
+      display: none
+    label
+      color: #fff
+      font-size: 32px
+      margin-right: 5%
+    .hidden-nav
+      height: 0
+      opacity: 0
+      margin: 25px 0 10px
+      +transition(0.5s linear)
+      li
+        display: inline-block
+        a
+          color: #fff
+          padding: 0 5px
+  #hamburger:checked ~ .hidden-nav
+    height: 100%
+    opacity: 1
+
